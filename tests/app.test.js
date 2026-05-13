@@ -14,3 +14,9 @@ describe('App Tests', () => {
     expect(response.body.status).toBe('healthy');
   });
 });
+
+test('GET /api/users returns empty array', async () => {
+  const response = await request(app).get('/api/users');
+  expect(response.status).toBe(200);
+  expect(response.body.users).toEqual([]);
+});

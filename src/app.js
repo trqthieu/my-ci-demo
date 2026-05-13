@@ -10,3 +10,7 @@ app.get('/health', (req, res) => {
 });
 
 module.exports = app;
+
+app.get('/api/users', (req, res) => {
+  res.json({ users: [] });
+});
