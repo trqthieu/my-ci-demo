@@ -14,3 +14,6 @@ module.exports = app;
 app.get('/api/users', (req, res) => {
   res.json({ users: [] });
 });
+app.get('/api/posts', (req, res) => {
+  res.json({ posts: [] });
+});
